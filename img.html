@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Img Search</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      input[type="text"] {
+        width: 500px;
+        height: 50px;
+        border-radius: 30px;
+      }
+      input[type="submit"] {
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+      }
+      a {
+        position: relative;
+        left: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">google search</a>
+    <div class="container">
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        style="text-align: center"
+      >
+        <h1>My_Google_Img_Search</h1>
+        <br />
+        <input type="text" name="q" />
+        <br />
+        <input type="submit" value="Google Search" />
+        <br />
+        <input type="hidden" name="tbm" value="isch" />
+
+        <input type="file" name="img" accept="image/*" />
+      </form>
+    </div>
+  </body>
+</html>
